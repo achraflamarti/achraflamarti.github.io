@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial;
+        }
+        table {
+            width: 90%;
+            background-color: rgb(240, 250, 255);
+        }
+        td {
+            width: 50%;
+        }
+        .title {
+            padding: 20px;
+            color: rgb(0, 51, 153);
+            text-align: center;
+        }
+        .article {
+            border: 2px solid black;
+            margin-bottom: 2pxpx;
+        }
+        h5 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="2" align="center" cellpadding="4px">
+        <tr>
+            <td colspan="2" class="title"><strong>Exercice 1 : Reproduire cette page en langage HTML(titres compris...)</strong></td>
+        </tr>
+        <tr>
+            <td>
+                Description du tableau : 
+                <ul>
+                    <li>3 lignes</li>
+                    <li>2 colonnes normalement de largeur égale</li>
+                    <li>Largeur : 90% de la page</li>
+                    <li>Espace entre les cellules : 2 pixels</li>
+                    <li>Marge intra-cellule : 4 pixels</li>
+                    <li>Couleur de fond : Rouge=240 Vert=250 Bleu=255</li>
+                    <li>Texte : Arial (couleurs utilisées : noir et R=0 / V=51 / B=153</li>
+                    <li>Image 1 : http://dpt-info.u-strasbg.fr/cb/article.gif</li>
+                    <li>Image 2 : http://dpt-info.u-strasbg.fr/cb/google.gif</li>
+                </ul>
+            </td>
+            <td align="center">
+                <img src="images/article.gif" alt="article" class="article"><br>
+                <strong>Ceci est une simple image centrée, avec un bord large de 2 pixels</strong>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" style="vertical-align: top;"><a target="_blank" href="https://www.google.com">Lien vers le moteur de recherche Google.com</a></td>
+            <td>
+                <a target="_blank" href="https://www.google.com"><img src="images/google.gif" alt="" ></a>
+                <i><h5>Même lien, mais cette fois avec une image et deux alignements distincts pour l'image et la légende</h5></i>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
