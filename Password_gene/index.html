@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generate Password</title>
+</head>
+<body>
+    <div class="container">
+        <h2>GENERATE PASSWORD</h2>
+        <div class="generate">
+            <h3 class="generate_txt">*****************</h3>
+        </div>
+        <table>
+            <tr>
+                <td>Charactères de longueur égale à 20 : </td>
+                <td><input type="checkbox" name="length" id="length" checked="on"></td>
+            </tr>
+            <tr>
+                <td>Charactères spéciaux : </td>
+                <td><input type="checkbox" name="speciaux" id="speciaux" checked="on"></td>
+            </tr>
+            <tr>
+                <td>Majucules : </td>
+                <td><input type="checkbox" name="maj" id="maj" checked="on"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="generate_pass()">GENERATE</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
