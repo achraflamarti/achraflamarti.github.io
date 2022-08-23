@@ -17,7 +17,9 @@ h2 {
     border-radius: 10px;
     background-color: bisque;
 }
-
+h1 {
+    text-align: center;
+}
 .container h2 {
     text-align: center;
 }
