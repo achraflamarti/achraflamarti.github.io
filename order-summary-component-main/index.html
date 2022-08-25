@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    body {
+      background-image: url(images/pattern-background-desktop.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      background-color: hsl(225, 100%, 90%);
+    }
+    .container{
+      text-align: center;
+      width: 450px;
+      margin: auto;
+      border-radius: 20px;
+      background-color: white;
+    }
+    .description {
+      width: 70%;
+      margin: auto;
+      color: hsl(224, 23%, 55%)
+    }
+    .music {
+      background-color: azure;
+      padding: 2px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      margin: auto;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .buttons{
+      
+      width: 70%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .proceed{
+      border: none;
+      border-radius: 10px;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      font-weight: bold;
+      box-shadow: 0px 10px 8px rgb(133, 133, 133);
+      padding: 15px;
+    }
+    .music-ch{
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+    .cancel {
+      margin-bottom: 30px;
+      background: none;
+      border: none;
+      color: hsl(245, 75%, 52%);
+      font-weight: bold;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image">
+      <img class="music-ch" src="images/illustration-hero.svg" alt="" srcset="">
+    </div>
+    <div class="title">
+      <h1>Order Summary</h1>
+    </div>
+    <div class="description">
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+    </div>
+    <div class="music">
+      <div class="music-icon">
+        <img src="images/icon-music.svg" alt="" srcset="">
+      </div>
+      <div class="music-description">
+        <h3>Annual Plan</h3>
+        <p>$59,99/year</p>
+      </div>
+      <div class="music-change">
+        <a href="#">Change</a>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="proceed">Proceed to Payment</button>
+      <button class="cancel">Cancel Order</button>
+    </div>
+  </div>
+</body>
+</html>
