@@ -17,9 +17,11 @@ a {
   border-radius: 40px;
 }
 #home{
+  background-image: url(../img/bg_image_1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  
 }
 /* Filterable button */
 .filterable-button {
@@ -65,6 +67,7 @@ a {
   padding: 80px 0;
   width: 100%;
   overflow: hidden;
+  
 }
 
 .page-home {  
