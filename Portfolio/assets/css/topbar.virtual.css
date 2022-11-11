@@ -73,7 +73,7 @@ a {
 .page-home {  
   padding: 25px 0;
   width: 100%;
-  height: 715px;
+  height: 100vh;
   z-index: 99;
 }
 
