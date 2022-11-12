@@ -33,10 +33,13 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/topbar.virtual.css">
   
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  
+  <script async src="https://api.countapi.xyz/hit/achraflamarti.github.io/52fe6b88-5dbd-45ed-addf-665104d0a3b9?callback=websiteVisits"></script>
 </head>
-<body class="theme-red">
+<body class="theme-red" onLoad="disableClick()">
   
   <!-- Back to top button -->
+
   <div class="btn-back_to_top">
     <span class="ti-arrow-up"></span>
   </div>
@@ -76,7 +79,8 @@
       <h5 class="fw-normal">Bienvenue</h5>
       <h1 class="fw-light mb-4">Je suis <b class="fg-theme">LAMARTI</b> Achraf</h1>
       
-    </div> <!-- End Caption header -->
+    </div> 
+    <!-- End Caption header -->
     <div class="floating-button"><span class="ti-mouse"></span></div>
   </div>
   
@@ -85,7 +89,7 @@
       <div class="row">
         <div class="col-lg-4 py-3">
           <div class="img-place wow fadeInUp">
-            <img src="../assets/img/Profile.jpg" alt="">
+            <img src="../assets/img/Profile.jpg" alt="Profile Achraf">
           </div>
         </div>
         <div class="col-lg-6 offset-lg-1 wow fadeInRight">
@@ -327,7 +331,7 @@
   </div>
   <div class="vg-page page-service">
     <div class="container">
-      <h1 class="fw-normal text-center wow fadeInUp">ACTIVITÉS PARASCOLAIRES</h1>
+      <h1 class="fw-normal text-center wow fadeInUp"><i class="fa fa-trophy" aria-hidden="true"></i> ACTIVITÉS PARASCOLAIRES</h1>
       <div class="row mt-5">
         <div class="col-md-6 col-lg-4 col-xl-3">
           <div class="card card-service wow fadeInUp">
@@ -373,28 +377,17 @@
     </div>
   </div>
   
-  <!-- <div class="vg-page page-funfact" style="background-image: url(../assets/img/bg_banner.jpg);">
+  <!-- <h1 class="fw-normal text-center wow fadeInUp"><i class="fa fa-university" aria-hidden="true"></i> CERTIFICATIONS</h1> -->
+  <h1 id="visits"></h1>
+  <div class="vg-page page-funfact" style="background-image: url(../assets/img/bg_banner.jpg);">
     <div class="container">
       <div class="row section-counter">
-        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
-          <h1 class="number" data-number="768">768</h1>
-          <span>Clients</span>
-        </div>
-        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
-          <h1 class="number" data-number="230">230</h1>
-          <span>Project Compleate</span>
-        </div>
-        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
-          <h1 class="number" data-number="97">97</h1>
-          <span>Project Ongoing</span>
-        </div>
-        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
-          <h1 class="number" data-number="699">699</h1>
-          <span>Client Satisfaction</span>
+        <div class="col-md-12 col-lg-12 py-4 wow fadeIn">
+          <h1>Visiteurs du PORTFOLIO <span class="number" id="visited" data-number="100"></span></h1>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   
   <!-- Portfolio page -->
   <!-- <div class="vg-page page-portfolio" id="portfolio"> -->
@@ -707,7 +700,10 @@
         </div>
       </div>
       <div class="row justify-content-center mt-3">
-        <div class="col-12">
+        <div class="col-12 mb-3">
+          <h3 class="fw-normal text-center">Subscribe</h3>
+        </div>
+        <div class="col-12 hh">
           <p class="text-center mb-0 mt-4">Copyright &copy;2020. All right reserved | <span class="ti-heart fg-theme-red"></span> by <a href="#">Achraf LAMARTI</a></p>
         </div>
       </div>
