@@ -138,6 +138,12 @@ $(document).ready(function () {
       }
       
       $stickyLinks.eq(currentIndex).addClass('active');
+      window.onscroll = function(ev) {
+        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+          self.$sticky.find('.navbar-nav .nav-item').removeClass('active');
+          $('#coucou').addClass('active');
+        }
+    };
     },
     
     init: function () {
