@@ -1,5 +1,5 @@
 function myFunction() {
-    window.open('../assets/cv/CV_AchrafLamarti.pdf');
+    window.open('../assets/cv/MyCV.pdf');
 }
 
 var element_navbar = document.querySelector('.nav-link');
@@ -19,4 +19,13 @@ function disableClick(){
 function websiteVisits(response) {
     document.querySelector("#visited").setAttribute("data-number",response.value);
     console.log(response.value);
+}
+
+
+function mouseFloating(){
+    console.log(document.body.offsetHeight);
+    $('html').animate({
+        scrollTop: document.body.offsetHeight
+      }, 11000);
+      return false;
 }
