@@ -1,5 +1,5 @@
 function myFunction() {
-    window.open('../assets/cv/MyCV.pdf');
+    window.open('../assets/cv/CV_AchrafLamarti.pdf');
 }
 
 var element_navbar = document.querySelector('.nav-link');
