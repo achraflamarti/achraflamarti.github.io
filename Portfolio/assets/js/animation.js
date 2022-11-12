@@ -11,10 +11,7 @@ function salam(){
 function disableClick(){
     document.querySelector('body').addEventListener('mouseup',(e)=>{
         if(e.button == 2){
-            var password = prompt("Entrez le mote de passe pour consulter le code source");
-            if(password != "achraflamarti"){
-                window.close();
-            }
+            document.addEventListener('contextmenu', event => event.preventDefault());
         }
     })
 }
