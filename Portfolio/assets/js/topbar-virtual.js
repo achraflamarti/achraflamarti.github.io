@@ -110,18 +110,16 @@ $(document).ready(function () {
       var $stickyLinks = self.$sticky.find('.navbar-nav .nav-item').removeClass('active');
       var stickyPosition = 'fixed';
       var currentIndex = 0;
-      
+      var vgFooter = document.querySelector('.vg-footer');
       // Toggle fixed position depending on visibility
       if ($(window).width() < 800 || $(window).height() < 500 || self.stickyTop > windowTop) {
         stickyPosition = 'absolute';
-        self.$sticky.removeClass('floating');
-        
       } else {
         
         for (var i = self.offsets.length; i--;) {
+          
           if (windowTop >= self.offsets[i] - 2 && (self.offsets[i + 1] === undefined || windowTop <= self.offsets[i + 1] + 2)) {
             currentIndex = i;
-            
             break;
           }
         }
@@ -136,10 +134,10 @@ $(document).ready(function () {
       else {
         self.$sticky.addClass('floating');
       }
-      
+      console.log("vg footer"+vgFooter.offsetHeight);
       $stickyLinks.eq(currentIndex).addClass('active');
       window.onscroll = function(ev) {
-        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight-vgFooter.offsetHeight) {
           self.$sticky.find('.navbar-nav .nav-item').removeClass('active');
           $('#coucou').addClass('active');
         }
